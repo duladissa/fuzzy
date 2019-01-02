@@ -577,9 +577,9 @@ func (model *Model) SpellCheckSuggestions(input string, n int) []string {
 	return bestn(input, suggestions, n)
 }
 
-func SampleEnglish() []string {
+func SampleEnglish(fileName string) []string {
 	var out []string
-	file, err := os.Open("data/big.txt")
+	file, err := os.Open(fileName)
 	if err != nil {
 		fmt.Println(err)
 		return out

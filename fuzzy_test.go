@@ -12,7 +12,7 @@ import (
 var sampleEnglish []string
 
 func init() {
-	sampleEnglish = SampleEnglish()
+	sampleEnglish = SampleEnglish("data/big.txt")
 }
 
 func TestSpelling(t *testing.T) {
